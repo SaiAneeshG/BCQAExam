@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCQAExam", "BCQAExam\BCQAExam.csproj", "{F0D7E83E-65F7-4664-AC00-29052B03EDEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		AutomationPractice|Any CPU = AutomationPractice|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0D7E83E-65F7-4664-AC00-29052B03EDEA}.AutomationPractice|Any CPU.ActiveCfg = AutomationPractice|Any CPU
+		{F0D7E83E-65F7-4664-AC00-29052B03EDEA}.AutomationPractice|Any CPU.Build.0 = AutomationPractice|Any CPU
+		{F0D7E83E-65F7-4664-AC00-29052B03EDEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0D7E83E-65F7-4664-AC00-29052B03EDEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0D7E83E-65F7-4664-AC00-29052B03EDEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0D7E83E-65F7-4664-AC00-29052B03EDEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B006664D-E88C-4F4D-9253-B7B0BD6938D6}
+	EndGlobalSection
+EndGlobal
