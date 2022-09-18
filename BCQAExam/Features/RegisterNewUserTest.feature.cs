@@ -73,7 +73,11 @@ namespace BCQAExam.Features
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Register a New User")]
         [NUnit.Framework.CategoryAttribute("tag1")]
-        [NUnit.Framework.TestCaseAttribute("tester12qw357@mail.com", null)]
+        [NUnit.Framework.TestCaseAttribute("email1", null)]
+        [NUnit.Framework.TestCaseAttribute("email2", null)]
+        [NUnit.Framework.TestCaseAttribute("email3", null)]
+        [NUnit.Framework.TestCaseAttribute("email4", null)]
+        [NUnit.Framework.TestCaseAttribute("email5", null)]
         public virtual void RegisterANewUser(string emailAddress, string[] exampleTags)
         {
             string[] @__tags = new string[] {
@@ -95,6 +99,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 11
  testRunner.And("I enter details and click on Register", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 12
+ testRunner.And("I am navigated to My Account Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 13
+ testRunner.And("I click on signout button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 14
+ testRunner.And("I click on signin button to verify login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 15
+ testRunner.And("I signin with my new account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 16
  testRunner.And("I am navigated to My Account Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();

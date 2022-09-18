@@ -1,4 +1,5 @@
 ﻿using BCQAExam.Core;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using System;
 using System.Configuration;
@@ -17,7 +18,7 @@ namespace BCQAExam.Steps
         {
             var webClient = new WebClient { Proxy = null };
             var requestUrl = ConfigurationManager.AppSettings["URL"];
-            //webClient.DownloadString(requestUrl);
+            //webClient.DownloadString(requestUrl); commenting as the website is retruning 508 error
         }
 
         [Before]

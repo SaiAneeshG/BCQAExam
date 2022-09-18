@@ -48,7 +48,6 @@ namespace BCQAExam.Pages
             try
             {
                 var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
-                //wait.Until(drv => element.Displayed);
                 wait.Until(drv => element.Enabled);
                 element.Click();
             }

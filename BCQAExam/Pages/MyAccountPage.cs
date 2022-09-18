@@ -7,10 +7,12 @@ using System.Threading;
 
 namespace BCQAExam.Pages
 {
-    public class MyAccountPage:BasePage
+    public class MyAccountPage : BasePage
     {
         private IWebElement AccountName => Driver.FindControl(By.XPath("//a[@title='View my customer account']"));
         private IWebElement MyAccountTab => Driver.FindControl(By.XPath("//span[@class='navigation_page']"));
+
+        private IWebElement SignOutButton => Driver.FindControl(By.XPath("//*[@class='logout']"));
 
         public void AssertAccountName()
         {
@@ -43,6 +45,11 @@ namespace BCQAExam.Pages
                 }
             }
             
+        }
+
+        public void ClickOnSignOutButton()
+        {
+            ClickOnTheElement(Driver, SignOutButton);
         }
     }
 }

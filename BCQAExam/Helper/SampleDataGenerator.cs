@@ -52,6 +52,14 @@ namespace BCQAExam.Helper
             return lastName;
         }
 
+
+        public String getEmailAddress(String email)
+        {
+            String emailAddress = "Test" + email + contextValueString + "@mail.com";
+            StaticValues.SetEmailAddress(emailAddress);
+            return emailAddress;    
+        }
+
         public String getPassword()
         {
             StaticValues.SetPassword(contextValueString);

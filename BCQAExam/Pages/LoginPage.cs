@@ -1,10 +1,12 @@
 ﻿using BCQAExam.Core;
+using BCQAExam.Helper;
 using OpenQA.Selenium;
 
 namespace BCQAExam.Pages
 {
     public class LoginPage : BasePage
     {
+        private SampleDataGenerator data = new SampleDataGenerator();
         private IWebElement Email => Driver.FindControl(By.Id("email"), true);
 
         private IWebElement Password => Driver.FindControl(By.Id("passwd"));
@@ -16,19 +18,18 @@ namespace BCQAExam.Pages
         private IWebElement CreateAccountButton => Driver.FindControl(By.Id("SubmitCreate"));
 
 
-        public void Login(string email = null, string password = null)
+        public void Login(string emailAddress = null, string password = null)
         {
-            Email.Clear();
-            Email.SendKeys(email);
-            Password.Clear();
-            Password.SendKeys(password);
-            LoginButton.Click();
+            EnterValuesInField(Driver, Email, emailAddress);
+            EnterValuesInField(Driver, Password, password);
+            ClickOnTheElement(Driver, LoginButton);
         }
 
         public void CreateAccount(string email = null)
         {
+            string emailAddress = data.getEmailAddress(email);
             EmailCreate.Clear();
-            EmailCreate.SendKeys(email);
+            EmailCreate.SendKeys(emailAddress);
             CreateAccountButton.Click();
         }
     }
