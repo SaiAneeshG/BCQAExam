@@ -20,9 +20,9 @@ namespace BCQAExam.Pages
 
         public void Login(string emailAddress = null, string password = null)
         {
-            EnterValuesInField(Driver, Email, emailAddress);
-            EnterValuesInField(Driver, Password, password);
-            ClickOnTheElement(Driver, LoginButton);
+            EnterValuesInField(Email, emailAddress);
+            EnterValuesInField(Password, password);
+            ClickOnTheElement(LoginButton);
         }
 
         public void CreateAccount(string email = null)

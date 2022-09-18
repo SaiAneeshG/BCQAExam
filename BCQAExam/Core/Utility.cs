@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace BCQAExam.Core
 {
+    /***
+     * Utilty class consists of various methods used to interact with the dropdowns
+     */
     public static class Utility
     {
         public static SelectElement select;

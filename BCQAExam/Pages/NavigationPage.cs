@@ -15,7 +15,7 @@ namespace BCQAExam.Pages
 
         public void NavigateToLoginPage()
         {
-            ClickOnTheElement(Driver, SignInButton);
+            ClickOnTheElement(SignInButton);
         }
     }
 }
