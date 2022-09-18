@@ -16,32 +16,47 @@ namespace BCQAExam
         private MyAccountPage MyAccountPage = new MyAccountPage();
 
         [When(@"I enter a valid ""([^""]*)"" and click on create account")]
-        public void WhenIEnterAValidAndClickOnCreateAccount(string emailAddress)
+        public void WhenIEnterAValidAndClickOnCreateAccount(string email)
         {
             NavigationPage.NavigateToLoginPage();
-            StaticValues.SetEmailAddress(emailAddress);
-            LoginPage.CreateAccount(emailAddress);
+            LoginPage.CreateAccount(email);
         }
 
         [Then(@"I should be navigated to the create an account page")]
         public void ThenIShouldBeNavigatedToTheCreateAnAccountPage()
         {
-            //Thread.Sleep(5000);
             CreateAccountPage.verifyNavigationToCreateAccountPage();
         }
 
         [Then(@"I enter details and click on Register")]
         public void ThenIEnterDetailsAndClickOnRegister()
         {
-            //Thread.Sleep(5000);
             CreateAccountPage.createAccount();
         }
 
         [Then(@"I am navigated to My Account Page")]
         public void ThenIAmNavigatedToMyAccountPage()
         {
-            //Thread.Sleep(5000);
             MyAccountPage.AssertAccountDetails(StaticValues.GetFullName());
         }
+
+        [Then(@"I click on signout button")]
+        public void ThenIClickOnSignoutButton()
+        {
+            MyAccountPage.ClickOnSignOutButton();
+        }
+
+        [Then(@"I click on signin button to verify login")]
+        public void ThenIClickOnSigninButtonToVerifyLogin()
+        {
+            NavigationPage.NavigateToLoginPage();
+        }
+
+        [Then(@"I signin with my new account")]
+        public void ThenISigninWithMyNewAccount()
+        {
+            LoginPage.Login(StaticValues.EmailAddress, StaticValues.Password);
+        }
+
     }
 }

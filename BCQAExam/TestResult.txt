@@ -1,0 +1,139 @@
+=> BCQAExam.Features.LoginTestFeature.LogIn
+Given I am in the home page of the system
+Context Int value generated is: 1663514441
+Context String value generated is: gbifecdh
+-> done: LoginSteps.GivenIAmInTheHomePageOfTheSystem() (15.9s)
+When I enter my username and password
+  --- table step argument ---
+  | UserName             | Password |
+  | tester99887@mail.com | test1234 |
+-> done: LoginSteps.WhenIEnterMyUsernameAndPassword(<table>) (30.4s)
+Then I should be redirected to my Account Page
+-> done: LoginSteps.ThenIShouldBeRedirectedToMyAccountPage() (0.1s)
+=> BCQAExam.Features.LoginTestFeature
+-> Using app.config
+=> BCQAExam.Features.RegisterNewUserTestFeature.RegisterANewUser("email1",null)
+Given I am in the home page of the system
+Context Int value generated is: 1663514490
+Context String value generated is: hjbcfgia
+-> done: LoginSteps.GivenIAmInTheHomePageOfTheSystem() (15.7s)
+When I enter a valid "email1" and click on create account
+Context Int value generated is: 1663514506
+Context String value generated is: jfdgbech
+Context Int value generated is: 1663514506
+Context String value generated is: fhcbeiga
+-> done: RegisterNewUserStepDefinitions.WhenIEnterAValidAndClickOnCreateAccount("email1") (5.1s)
+Then I should be navigated to the create an account page
+-> done: RegisterNewUserStepDefinitions.ThenIShouldBeNavigatedToTheCreateAnAccountPage() (5.9s)
+And I enter details and click on Register
+-> done: RegisterNewUserStepDefinitions.ThenIEnterDetailsAndClickOnRegister() (11.0s)
+And I am navigated to My Account Page
+-> done: RegisterNewUserStepDefinitions.ThenIAmNavigatedToMyAccountPage() (0.1s)
+And I click on signout button
+-> done: RegisterNewUserStepDefinitions.ThenIClickOnSignoutButton() (13.2s)
+And I click on signin button to verify login
+-> done: RegisterNewUserStepDefinitions.ThenIClickOnSigninButtonToVerifyLogin() (10.6s)
+And I signin with my new account
+-> done: RegisterNewUserStepDefinitions.ThenISigninWithMyNewAccount() (13.6s)
+And I am navigated to My Account Page
+-> done: RegisterNewUserStepDefinitions.ThenIAmNavigatedToMyAccountPage() (0.1s)
+=> BCQAExam.Features.RegisterNewUserTestFeature.RegisterANewUser("email2",null)
+Given I am in the home page of the system
+Context Int value generated is: 1663514568
+Context String value generated is: fbhgicej
+-> done: LoginSteps.GivenIAmInTheHomePageOfTheSystem() (14.1s)
+When I enter a valid "email2" and click on create account
+Context Int value generated is: 1663514582
+Context String value generated is: afhbegji
+Context Int value generated is: 1663514582
+Context String value generated is: gefhdcai
+-> done: RegisterNewUserStepDefinitions.WhenIEnterAValidAndClickOnCreateAccount("email2") (10.7s)
+Then I should be navigated to the create an account page
+-> done: RegisterNewUserStepDefinitions.ThenIShouldBeNavigatedToTheCreateAnAccountPage() (6.4s)
+And I enter details and click on Register
+-> done: RegisterNewUserStepDefinitions.ThenIEnterDetailsAndClickOnRegister() (9.9s)
+And I am navigated to My Account Page
+-> done: RegisterNewUserStepDefinitions.ThenIAmNavigatedToMyAccountPage() (0.1s)
+And I click on signout button
+-> done: RegisterNewUserStepDefinitions.ThenIClickOnSignoutButton() (6.4s)
+And I click on signin button to verify login
+-> done: RegisterNewUserStepDefinitions.ThenIClickOnSigninButtonToVerifyLogin() (6.0s)
+And I signin with my new account
+-> done: RegisterNewUserStepDefinitions.ThenISigninWithMyNewAccount() (7.9s)
+And I am navigated to My Account Page
+-> done: RegisterNewUserStepDefinitions.ThenIAmNavigatedToMyAccountPage() (0.1s)
+=> BCQAExam.Features.RegisterNewUserTestFeature.RegisterANewUser("email3",null)
+Given I am in the home page of the system
+Context Int value generated is: 1663514631
+Context String value generated is: edacihbg
+-> done: LoginSteps.GivenIAmInTheHomePageOfTheSystem() (10.0s)
+When I enter a valid "email3" and click on create account
+Context Int value generated is: 1663514641
+Context String value generated is: ebcdajgf
+Context Int value generated is: 1663514641
+Context String value generated is: fjceiabd
+-> done: RegisterNewUserStepDefinitions.WhenIEnterAValidAndClickOnCreateAccount("email3") (2.7s)
+Then I should be navigated to the create an account page
+-> done: RegisterNewUserStepDefinitions.ThenIShouldBeNavigatedToTheCreateAnAccountPage() (2.2s)
+And I enter details and click on Register
+-> done: RegisterNewUserStepDefinitions.ThenIEnterDetailsAndClickOnRegister() (11.5s)
+And I am navigated to My Account Page
+-> done: RegisterNewUserStepDefinitions.ThenIAmNavigatedToMyAccountPage() (0.1s)
+And I click on signout button
+-> done: RegisterNewUserStepDefinitions.ThenIClickOnSignoutButton() (7.2s)
+And I click on signin button to verify login
+-> done: RegisterNewUserStepDefinitions.ThenIClickOnSigninButtonToVerifyLogin() (6.1s)
+And I signin with my new account
+-> done: RegisterNewUserStepDefinitions.ThenISigninWithMyNewAccount() (5.4s)
+And I am navigated to My Account Page
+-> done: RegisterNewUserStepDefinitions.ThenIAmNavigatedToMyAccountPage() (0.1s)
+=> BCQAExam.Features.RegisterNewUserTestFeature.RegisterANewUser("email4",null)
+Given I am in the home page of the system
+Context Int value generated is: 1663514678
+Context String value generated is: abdigfhj
+-> done: LoginSteps.GivenIAmInTheHomePageOfTheSystem() (8.5s)
+When I enter a valid "email4" and click on create account
+Context Int value generated is: 1663514686
+Context String value generated is: igahfdcj
+Context Int value generated is: 1663514686
+Context String value generated is: jecafibh
+-> done: RegisterNewUserStepDefinitions.WhenIEnterAValidAndClickOnCreateAccount("email4") (8.5s)
+Then I should be navigated to the create an account page
+-> done: RegisterNewUserStepDefinitions.ThenIShouldBeNavigatedToTheCreateAnAccountPage() (11.0s)
+And I enter details and click on Register
+-> done: RegisterNewUserStepDefinitions.ThenIEnterDetailsAndClickOnRegister() (18.2s)
+And I am navigated to My Account Page
+-> done: RegisterNewUserStepDefinitions.ThenIAmNavigatedToMyAccountPage() (0.1s)
+And I click on signout button
+-> done: RegisterNewUserStepDefinitions.ThenIClickOnSignoutButton() (20.2s)
+And I click on signin button to verify login
+-> done: RegisterNewUserStepDefinitions.ThenIClickOnSigninButtonToVerifyLogin() (6.0s)
+And I signin with my new account
+-> done: RegisterNewUserStepDefinitions.ThenISigninWithMyNewAccount() (9.3s)
+And I am navigated to My Account Page
+-> done: RegisterNewUserStepDefinitions.ThenIAmNavigatedToMyAccountPage() (0.1s)
+=> BCQAExam.Features.RegisterNewUserTestFeature.RegisterANewUser("email5",null)
+Given I am in the home page of the system
+Context Int value generated is: 1663514762
+Context String value generated is: gfdhaibc
+-> done: LoginSteps.GivenIAmInTheHomePageOfTheSystem() (8.0s)
+When I enter a valid "email5" and click on create account
+Context Int value generated is: 1663514770
+Context String value generated is: dcifbgaj
+Context Int value generated is: 1663514770
+Context String value generated is: jgcfdiba
+-> done: RegisterNewUserStepDefinitions.WhenIEnterAValidAndClickOnCreateAccount("email5") (8.9s)
+Then I should be navigated to the create an account page
+-> done: RegisterNewUserStepDefinitions.ThenIShouldBeNavigatedToTheCreateAnAccountPage() (6.5s)
+And I enter details and click on Register
+-> done: RegisterNewUserStepDefinitions.ThenIEnterDetailsAndClickOnRegister() (15.2s)
+And I am navigated to My Account Page
+-> done: RegisterNewUserStepDefinitions.ThenIAmNavigatedToMyAccountPage() (0.1s)
+And I click on signout button
+-> done: RegisterNewUserStepDefinitions.ThenIClickOnSignoutButton() (6.5s)
+And I click on signin button to verify login
+-> done: RegisterNewUserStepDefinitions.ThenIClickOnSigninButtonToVerifyLogin() (9.1s)
+And I signin with my new account
+-> done: RegisterNewUserStepDefinitions.ThenISigninWithMyNewAccount() (16.2s)
+And I am navigated to My Account Page
+-> done: RegisterNewUserStepDefinitions.ThenIAmNavigatedToMyAccountPage() (0.1s)

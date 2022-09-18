@@ -10,6 +10,14 @@ Scenario Outline: Register a New User
 	Then I should be navigated to the create an account page
 	And I enter details and click on Register
 	And I am navigated to My Account Page
+	And I click on signout button
+	And I click on signin button to verify login
+	And I signin with my new account
+	And I am navigated to My Account Page
 	Examples: 
-	| EmailAddress			 |
-	| tester12qw357@mail.com |
+	| EmailAddress |
+	| email1       |
+	| email2       |
+	| email3       |
+	| email4       |
+	| email5       |
