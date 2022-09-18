@@ -42,6 +42,7 @@ namespace BCQAExam.Core
             }
         }
 
+        //method to find the list of element
         public static ReadOnlyCollection<IWebElement> FindListOfElements(this IWebDriver driver, By findBy, bool ensureVisibility = false,
             bool isClickable = false, bool moveElement = false)
         {

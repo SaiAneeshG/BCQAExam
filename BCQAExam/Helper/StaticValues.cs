@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace BCQAExam.Helper
 {
+    /***
+     * Static values is created to store the test values for resuability 
+     */
     public static class StaticValues
     {
         public static String EmailAddress = "";

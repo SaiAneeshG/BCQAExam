@@ -32,8 +32,8 @@ namespace BCQAExam.Pages
                 {
                     Assert.Multiple(() =>
                     {
-                        Assert.AreEqual(FullName, GetTextOfElement(Driver, AccountName));
-                        Assert.AreEqual("My account", GetTextOfElement(Driver, MyAccountTab));
+                        Assert.AreEqual(FullName, GetTextOfElement(AccountName));
+                        Assert.AreEqual("My account", GetTextOfElement(MyAccountTab));
                     });
                     break; // success!
                 }
@@ -49,7 +49,7 @@ namespace BCQAExam.Pages
 
         public void ClickOnSignOutButton()
         {
-            ClickOnTheElement(Driver, SignOutButton);
+            ClickOnTheElement(SignOutButton);
         }
     }
 }

@@ -6,6 +6,9 @@ using System;
 
 namespace BCQAExam.Pages
 {
+    /***
+     * This class consists of util methods for all generic webdriver actions to avoid synchronization issues
+     */
     public class BasePage
     {
         protected IWebDriver Driver = BaseStepDefinition.driver;
@@ -24,15 +27,13 @@ namespace BCQAExam.Pages
                     .Until(drv => drv.Url.Contains(pageUrl));
         }
 
-        public void EnterValuesInField(IWebDriver driver, IWebElement element, String value)
+        public void EnterValuesInField(IWebElement element, String value)
         {
             try
             {
-                var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
+                var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(60));
                 wait.Until(drv => element.Displayed);
                 wait.Until(drv => element.Enabled);
-                //IJavaScriptExecutor jse = (IJavaScriptExecutor)driver;
-                //jse.ExecuteScript("scroll(0, 250)");
                 element.Clear();
                 element.SendKeys(value);
             }
@@ -43,11 +44,11 @@ namespace BCQAExam.Pages
             }
         }
 
-        public void ClickOnTheElement(IWebDriver driver, IWebElement element)
+        public void ClickOnTheElement(IWebElement element)
         {
             try
             {
-                var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
+                var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(60));
                 wait.Until(drv => element.Enabled);
                 element.Click();
             }
@@ -58,11 +59,11 @@ namespace BCQAExam.Pages
             }
         }
 
-        public String GetTextOfElement(IWebDriver driver, IWebElement element)
+        public String GetTextOfElement(IWebElement element)
         {
             try
             {
-                var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
+                var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(60));
                 wait.Until(drv => element.Enabled);
                 return element.Text;
             }
@@ -73,11 +74,11 @@ namespace BCQAExam.Pages
             }
         }
 
-        public String GetTextInElement(IWebDriver driver, IWebElement element)
+        public String GetTextInElement(IWebElement element)
         {
             try
             {
-                var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
+                var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(60));
                 wait.Until(drv => element.Enabled);
                 return element.GetAttribute("value");
             }

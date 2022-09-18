@@ -7,6 +7,9 @@ using WebDriverManager.DriverConfigs.Impl;
 
 namespace BCQAExam.Core
 {
+    /***
+     * WebDriverFactory uses WebDriverManager package to find and download the latest stable browser drivers
+     */
     public class WebDriverFactory
     {
         public static IWebDriver CreateDriver(DriverType driverType)
@@ -15,7 +18,7 @@ namespace BCQAExam.Core
             switch (driverType)
             {
                 case DriverType.Ie:
-                   driverPath = new DriverManager().SetUpDriver(new InternetExplorerConfig());
+                   driverPath = new DriverManager().SetUpDriver(new InternetExplorerConfig()).Replace("\\IEDriverServer.exe", "");
                    return new InternetExplorerDriver(driverPath);
                 case DriverType.Chrome:
                     driverPath = new DriverManager().SetUpDriver(new ChromeConfig()).Replace("\\chromedriver.exe","");
@@ -28,7 +31,7 @@ namespace BCQAExam.Core
                     chromeOptions.AddArguments("--disable-infobars");
                     return new ChromeDriver(driverPath, chromeOptions);
                 default:
-                    driverPath = new DriverManager().SetUpDriver(new FirefoxConfig());
+                    driverPath = new DriverManager().SetUpDriver(new FirefoxConfig()).Replace("\\geckodriver.exe", "");
                     return new FirefoxDriver(driverPath);
             }
         }

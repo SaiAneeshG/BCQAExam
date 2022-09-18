@@ -61,46 +61,21 @@ namespace BCQAExam.Pages
 
         public void createAccount()
         {
-            /*Title[data.getTitle()].Click();
-            FirstName.Clear();
-            FirstName.SendKeys(data.getFirstName());
-            LastName.Clear();
-            LastName.SendKeys(data.getLastName());
-            Password.Clear();
-            Password.SendKeys(data.getPassword());
+            ClickOnTheElement(Title[data.getTitle()]);
+            EnterValuesInField(FirstName, data.getFirstName());
+            EnterValuesInField(LastName, data.getLastName());
+            EnterValuesInField(Password, data.getPassword());
             Utility.SelectElementByValueWithWait(Driver, DayInDOB, Convert.ToString(data.getDayInDOB()));
             Utility.SelectElementByValueWithWait(Driver, MonthInDOB, Convert.ToString(data.getMonthInDOB()));
             Utility.SelectElementByValueWithWait(Driver, YearsInDOB, Convert.ToString(data.getYearInDOB()));
-            AddressLineOne.Clear();
-            AddressLineOne.SendKeys(data.getAddressLineOne());
-            AddressLineTwo.Clear();
-            AddressLineTwo.SendKeys(data.getAddressLineTwo());
-            City.Clear();
-            City.SendKeys(data.getCity());
+            EnterValuesInField(AddressLineOne, data.getAddressLineOne());
+            EnterValuesInField(AddressLineTwo, data.getAddressLineTwo());
+            EnterValuesInField(City, data.getCity());
             Utility.SelectElementByValueWithWait(Driver, State, Convert.ToString(data.getStateIndex()));
-            PostalCode.Clear();
-            PostalCode.SendKeys(data.getPostalCode());
-            HomePhone.Clear();
-            HomePhone.SendKeys(data.getHomePhoneNumber());
-            MobilePhone.Clear();
-            MobilePhone.SendKeys(data.getMobilePhoneNumber());
-            RegisterButton.Click();*/
-
-            ClickOnTheElement(Driver, Title[data.getTitle()]);
-            EnterValuesInField(Driver, FirstName, data.getFirstName());
-            EnterValuesInField(Driver, LastName, data.getLastName());
-            EnterValuesInField(Driver, Password, data.getPassword());
-            Utility.SelectElementByValueWithWait(Driver, DayInDOB, Convert.ToString(data.getDayInDOB()));
-            Utility.SelectElementByValueWithWait(Driver, MonthInDOB, Convert.ToString(data.getMonthInDOB()));
-            Utility.SelectElementByValueWithWait(Driver, YearsInDOB, Convert.ToString(data.getYearInDOB()));
-            EnterValuesInField(Driver, AddressLineOne, data.getAddressLineOne());
-            EnterValuesInField(Driver, AddressLineTwo, data.getAddressLineTwo());
-            EnterValuesInField(Driver, City, data.getCity());
-            Utility.SelectElementByValueWithWait(Driver, State, Convert.ToString(data.getStateIndex()));
-            EnterValuesInField(Driver, PostalCode, data.getPostalCode());
-            EnterValuesInField(Driver, HomePhone, data.getHomePhoneNumber());
-            EnterValuesInField(Driver, MobilePhone, data.getMobilePhoneNumber());
-            ClickOnTheElement(Driver, RegisterButton);
+            EnterValuesInField(PostalCode, data.getPostalCode());
+            EnterValuesInField(HomePhone, data.getHomePhoneNumber());
+            EnterValuesInField(MobilePhone, data.getMobilePhoneNumber());
+            ClickOnTheElement(RegisterButton);
         }
 
         public void verifyNavigationToCreateAccountPage()
@@ -110,8 +85,8 @@ namespace BCQAExam.Pages
             {
                 try
                 {
-                    Assert.AreEqual("YOUR PERSONAL INFORMATION", GetTextOfElement(Driver, PageSubHeading));
-                    Assert.AreEqual(StaticValues.EmailAddress, GetTextInElement(Driver, Email));
+                    Assert.AreEqual("YOUR PERSONAL INFORMATION", GetTextOfElement(PageSubHeading));
+                    Assert.AreEqual(StaticValues.EmailAddress, GetTextInElement(Email));
                     break; // success!
                 }
                 catch

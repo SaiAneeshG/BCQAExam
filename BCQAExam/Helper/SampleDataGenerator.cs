@@ -7,6 +7,12 @@ using System.Threading.Tasks;
 
 namespace BCQAExam.Helper
 {
+    /***
+     * SampleDataGenerator created the required data for test case in each run and to remain
+     * the values as unique this method used contextValueString and contextValueInt in which 
+     * the string value is generated randomly with length 8 and int vaulue is generated using
+     * the system run time
+     */
     public class SampleDataGenerator
     {
         public String contextValueString = "";
